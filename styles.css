@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.app {
+  width: min(900px, 100%);
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  margin: 0 0 22px;
+  color: #667085;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+button {
+  border: 1px solid #d0d5dd;
+  background: white;
+  color: #344054;
+  padding: 10px 14px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #f2f4f7;
+}
+
+button.active {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+button.primary {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+button.primary:hover {
+  background: #1d4ed8;
+}
+
+#status {
+  min-height: 24px;
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  width: 100%;
+  aspect-ratio: 15 / 10;
+  border: 2px solid #cfd4dc;
+  background: #cfd4dc;
+  gap: 1px;
+}
+
+.cell {
+  background: white;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.cell:hover {
+  background: #eef2f6;
+}
+
+.cell.start {
+  background: #22c55e;
+}
+
+.cell.end {
+  background: #ef4444;
+}
+
+.cell.obstacle {
+  background: #374151;
+}
+
+.cell.path {
+  background: #60a5fa;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 18px;
+  color: #475467;
+  font-size: 0.95rem;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.box {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.box.start {
+  background: #22c55e;
+}
+
+.box.end {
+  background: #ef4444;
+}
+
+.box.obstacle {
+  background: #374151;
+}
+
+.box.path {
+  background: #60a5fa;
+}
+
+@media (max-width: 650px) {
+  .app {
+    padding: 18px;
+  }
+
+  button {
+    flex: 1 1 45%;
+  }
+}

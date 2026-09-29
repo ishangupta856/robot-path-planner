@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Path Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Robot Path Planner</h1>
+    <p class="subtitle">
+      Place a start point, an end point, and obstacles. Then find the shortest path.
+    </p>
+
+    <section class="controls">
+      <button id="startMode">Set Start</button>
+      <button id="endMode">Set End</button>
+      <button id="obstacleMode">Add Obstacles</button>
+      <button id="findPath" class="primary">Find Path</button>
+      <button id="randomObstacles">Random Obstacles</button>
+      <button id="reset">Reset</button>
+    </section>
+
+    <p id="status">Choose a mode, then click a cell.</p>
+
+    <div id="grid" class="grid" aria-label="Robot path planning grid"></div>
+
+    <section class="legend">
+      <span><i class="box start"></i> Start</span>
+      <span><i class="box end"></i> End</span>
+      <span><i class="box obstacle"></i> Obstacle</span>
+      <span><i class="box path"></i> Path</span>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
