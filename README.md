@@ -32,20 +32,6 @@ It cannot move through obstacles.
 - CSS
 - JavaScript
 
-## Run it
-
-Just open `index.html` in a browser.
-
-## Put it on GitHub
-
-1. Create a new GitHub repository called something like `robot-path-planner`.
-2. Upload `index.html`, `styles.css`, `script.js`, and this `README.md`.
-3. In the repository, go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose the `main` branch and `/ (root)`.
-6. Save.
-7. GitHub will create a public link for the project.
-
 ## What I learned
 
 This project helped me practice:
